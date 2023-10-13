@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Password secure",
+    "version": "1.0",
+    "description": "Extension facil de utilizar para poder generar contraseñas seguras de forma rápida",
+    "permissions": ["activeTab", "clipboardWrite"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png" 
+    }
+}
+  

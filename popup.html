@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Contraseñas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding: 5px;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="button"], button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover, button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="number"] {
+            width: 20%; 
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #password-container {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #password {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        #copy {
+            background-color: #4CAF50;
+            padding: 10px 12px;
+        }
+
+        #copy:hover {
+            background-color: #45a049;
+        }
+        #generate {
+            display: block;
+            margin: 5px auto 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" id="upperCase" checked> Mayúsculas<br>
+        <input type="checkbox" id="lowerCase" checked> Minúsculas<br>
+        <input type="checkbox" id="numbers" checked> Números<br>
+        <input type="checkbox" id="specialChars" checked> Caracteres especiales<br>
+    </div>
+    <div>
+        Longitud: <input type="number" id="length" value="12" min="1">
+    </div>
+    <button id="generate">Generar</button>
+    <div id="password-container">
+        <input type="text" id="password" readonly>
+        <button id="copy">📋</button>
+    </div>    
+    <script src="background.js"></script>
+</body>
+</html>
