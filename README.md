@@ -2,7 +2,7 @@
 
 Una extensión de navegador para Chrome que permite a los usuarios generar contraseñas seguras y personalizables con facilidad.
 
-![Captura de la Extensión](./icono.png)
+![Captura de la Extensión](./icon.png)
 
 ## Características
 
